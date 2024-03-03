@@ -70,7 +70,7 @@ namespace IP_02
             {
                 try
                 {
-                    TrigEquation.TrigonometricFunction tf = (TrigEquation.TrigonometricFunction)comboBox1.SelectedIndex;
+                    TrigEquation.EcuatieTrig tf = (TrigEquation.EcuatieTrig)comboBox1.SelectedIndex;
                     IEquation eq = new TrigEquation(tf, Double.Parse(textBox4.Text));
                     textBox5.Text = eq.Solve();
                 }
